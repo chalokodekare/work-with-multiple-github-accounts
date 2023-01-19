@@ -8,7 +8,7 @@ I would configure my system with both the accounts so that I can work on my offi
 
 To do this, follow the below steps
 
-### Generate SSH keys for all the accounts
+### 1. Generate SSH keys for all the accounts
 
 ```sh
      cd ~/.ssh
@@ -33,7 +33,7 @@ After entering the command the terminal will ask for passphrase, leave it empty 
 ![Generated Keys Image](resources/generated-keys.JPG)
 
 
-### Add SSH keys to SSH Agent
+### 2. Add SSH keys to SSH Agent
 
 We will add above generated keys to ssh-agent.
 ```sh
@@ -44,7 +44,7 @@ We will add above generated keys to ssh-agent.
 
 ![Adding SSH Keys Image](resources/add-ssh-key.JPG)
 
-### Add SSH public key to the Github
+### 3. Add SSH public key to the Github
 Now we need to add our public keys to corresponding github accounts.
 
 __1. Copy the public key__
@@ -64,7 +64,7 @@ __2. Paste the public key in Github__
   
 ![Adding SSH Keys In Github Image](resources/add-ssh-key-in-github.JPG)
 
-### Create or Edit Config File and Make Host Entries
+### 4. Create or Edit Config File and Make Host Entries
 
 In .ssh folder, look for config file.
 If **config** file doesn't exist then create one (make sure to be in **~/.ssh** directory)
@@ -91,7 +91,7 @@ Add below lines in config file.
 ```
 ![Create/Update config file Image](resources/config-file-content.JPG)
 
-### Clone GitHub repositories using different accounts
+### 5. Clone GitHub repositories using different accounts
 
 Now to clone https://github.com/chalokodekare/work-with-multiple-github-accounts.git, we can use any account:
 
@@ -103,7 +103,7 @@ Now to clone https://github.com/chalokodekare/work-with-multiple-github-accounts
  ```
 ![Clone repository Image](resources/clone-the-repo.JPG)
 
-## Configure User Name & Email
+## 6. Configure User Name & Email
 
 To make sure our commits in each repository uses the correct GitHub user — we will have to configure **user.email** and **user.name** in all existing or newly cloned repositories.
 
@@ -127,6 +127,7 @@ Now you can use:
      git pull
 ```
 
+## 7. Verify remote
 To verify if your remote is pointing correctly, you can do:
 ```
     git remote -v
