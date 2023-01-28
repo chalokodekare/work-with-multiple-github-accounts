@@ -135,3 +135,13 @@ To verify if your remote is pointing correctly, you can do:
 ![Verify remote Image](resources/verify-remote.JPG)
 
 remove & add correct remote if incorrect.
+
+To remove existing remote
+```
+git remote remove origin
+```
+
+To add new remote
+```
+git remote add origin chalocodekare:chalokodekare/work-with-multiple-github-accounts.git
+```
