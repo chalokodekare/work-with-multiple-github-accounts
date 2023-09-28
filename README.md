@@ -120,6 +120,14 @@ To make sure our commits in each repository uses the correct GitHub user — we 
 Pick the correct pair for your repository accordingly.
 
 
+You can verify global user name and email id using below commands.
+
+```git
+     git config --global user.email   
+     git config --global user.name
+```
+
+
 Now you can use:
 ```git
      git push
